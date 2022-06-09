@@ -1,0 +1,40 @@
+### 解题思路
+
+反转整数，与原整数进行比较
+
+### 代码
+
+* java
+
+```java
+class Solution {
+    public boolean isPalindrome(int x) {
+        //x为负不符合回文数
+        if(x < 0) {
+            return false;
+        }
+
+        //定义反转整数
+        int reverse = 0;
+        //定义原整数的备份
+        int temp = x;
+
+        while(x != 0) {
+            //定义末尾数字
+            int end = x % 10;
+            //原整数中去除末尾数字
+            x /= 10;
+            //反转整数中加入末尾数字
+            reverse = reverse * 10 + end;
+        }
+        
+        //判断反转整数与原整数是否相等
+        if(reverse == temp) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+}
+```
+

@@ -1,0 +1,39 @@
+**执行用时：4 ms, 在所有 C 提交中击败了97.15%的用户
+内存消耗：5.7 MB, 在所有 C 提交中击败了64.45%的用户。**
+
+首先判断：
+1. 负数一定不是回文数。
+2. 0一定是回文数。
+
+字符串版本：
+
+* 
+
+```
+bool isPalindrome(int x){
+    if(x==0)return true;
+    if(x<0)return false;
+    int cnt=0,t = x;
+    while(t){cnt++;t/=10;}//获取整数的位数cnt
+    int a[cnt];//创建数组
+    for(int i;i<cnt;++i){a[i]=x%10;x/=10;}//将整型一个个填入数组(倒置)
+    for(int i;i<cnt/2;++i){if(a[i]!=a[cnt-1-i])return false;}//判断数组是否回文
+    return true;
+}
+```
+
+倒置版本：
+
+* 
+
+```
+bool isPalindrome(int x){
+    if(x==0)return true;
+    if(x<0)return false;
+    long t = x,ret=0;//防止x倒置后的ret溢出，故采用long类型，也可以用unsigned int。
+    while(t){ret=ret*10+t%10;t/=10;}//倒置
+    return ret==x;//优美的返回值
+}
+```
+
+若有问题欢迎纠正。

@@ -1,0 +1,22 @@
+int romanToInt(char * s){
+int a[256]={0,0};
+int b=strlen(s),i,j;
+int num=0;
+a['I']=1;
+a['V']=5;
+a['X']=10;
+a['L']=50;
+a['C']=100;
+a['D']=500;
+a['M']=1000;
+for( i=b-1;i>=0;i--){
+if(i>=0&&i<b-1)//依照题意可分析低位字符表示的数应该小于高位 否则就是特殊情况
+{
+if(a[s[i]]<a[s[i+1]])
+a[s[i]]=-a[s[i]];
+}
+num=num+a[s[i]];
+}
+j=num;
+return j;
+}

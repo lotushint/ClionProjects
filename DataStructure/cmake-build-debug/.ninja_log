@@ -1,0 +1,14 @@
+# ninja log v5
+0	687	6764612754141666	build.ninja	78fa86ee3643d6e5
+138	341	6756952387280775	LinearTableSequentialStorage.exe	3171583d8ebcb0d9
+283	2388	6755867381485444	LinearTable.exe	e736e6cbc8aa560f
+157	301	6756973444002182	LinearTableSequentialStorageQueue.exe	973695c086e02c55
+98	214	6755871777861177	LinearTableStack.exe	bd4352eef03d8913
+165	327	6756954794513266	LinearTableSequentialStorageStack.exe	6903f7c6baa2cbbf
+0	94	6762177051321437	CMakeFiles/LinearListChainedStorageLeadingNodeSinglyLinkedList.dir/linearList/chainstorage/test/LeadingNodeSinglyLinkedList.c.obj	c3838b8b38d17d07
+1286	2104	6756997763665564	LinearTableSequentialStorageCircularQueue.exe	2df07bce8db49a18
+94	190	6757776487153623	LinearTableChainedStorage.exe	ac4d35718ba494ac
+145	345	6757776306315694	LinearTableChainedStorageLeadingNode.exe	33951fc4f43ce81
+2	107	6762236567734170	CMakeFiles/LinearListChainedStorageCircularSinglyLinkedList.dir/linearList/chainstorage/test/CircularSinglyLinkedList.c.obj	c851a5ce887a3430
+95	194	6762177052259000	LinearListChainedStorageLeadingNodeSinglyLinkedList.exe	e0e42887b0a35c22
+107	214	6762236568767616	LinearListChainedStorageCircularSinglyLinkedList.exe	e9ab45d0729379c3
