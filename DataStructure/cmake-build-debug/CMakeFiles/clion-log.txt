@@ -1,4 +1,4 @@
-F:\softInstall\JetBrains\Toolbox\apps\CLion\ch-0\221.5787.29\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=F:/softInstall/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/ninja/win/ninja.exe -G Ninja -S D:\jetbrainsProjects\ClionProjects\DataStructure -B D:\jetbrainsProjects\ClionProjects\DataStructure\cmake-build-debug
+D:\ProgramsFiles(x86)\JetBrains\Toolbox\apps\CLion\ch-0\221.5787.29\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S D:\lotushint\MyProjects\JetbrainsProjects\ClionProjects\DataStructure -B D:\lotushint\MyProjects\JetbrainsProjects\ClionProjects\DataStructure\cmake-build-debug
 -- Configuring done
 -- Generating done
--- Build files have been written to: D:/jetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug
+-- Build files have been written to: D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug

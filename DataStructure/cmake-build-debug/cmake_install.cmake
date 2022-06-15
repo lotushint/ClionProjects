@@ -1,4 +1,4 @@
-# Install script for directory: D:/jetbrainsProjects/ClionProjects/DataStructure
+# Install script for directory: D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "F:/softInstall/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "D:/ProgramsFiles(x86)/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/bin/objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/jetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

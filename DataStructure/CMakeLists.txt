@@ -20,3 +20,7 @@ add_executable(LinearListChainedStorageLeadingNodeSinglyLinkedList linearList/ch
 add_executable(LinearListChainedStorageCircularSinglyLinkedList linearList/chainstorage/test/CircularSinglyLinkedList.c linearList/chainstorage/CircularSinglyLinkedList.h)
 #线性表链式存储——双链表
 add_executable(LinearListChainedStorageDoublyLinkedList linearList/chainstorage/DoublyLinkedList.h linearList/chainstorage/test/DoublyLinkedList.c)
+#线性表链式存储——链式栈
+add_executable(LinearListChainedStorageChainStack linearList/chainstorage/ChainStack.h linearList/chainstorage/test/ChainStack.c)
+#线性表链式存储——链式栈
+add_executable(LinearListChainedStorageChainedQueue linearList/chainstorage/ChainedQueue.h linearList/chainstorage/test/ChainedQueue.c)
