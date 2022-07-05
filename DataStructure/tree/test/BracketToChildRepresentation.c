@@ -17,5 +17,6 @@ int main() {
     bracketToChildRepresentation(bracketTree, &root, &length, treeNode);
     printf("前序遍历的结果:\n");
     preorderTraverse(treeNode, root);
+    printf("\n%d", length);
     return 0;
 }

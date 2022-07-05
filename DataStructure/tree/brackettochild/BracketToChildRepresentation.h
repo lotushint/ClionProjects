@@ -80,15 +80,20 @@ void bracketToChildRepresentation(char bracket[], int *rootPointer, int *lengthP
             tree[l].child[i] = j;
             k++;
         }
+        *lengthPointer = j + 1;
     }
-    *lengthPointer = j + 1;
 }
 
-void preorderTraverse(TreeNode treeNode[], int root) {
-    printf("%c", treeNode[root].data);
+/**
+ * 树的前序遍历
+ * @param treeNodes 树的结点数组
+ * @param treeRoot 树根的下标
+ */
+void preorderTraverse(TreeNode node[], int treeRoot) {
+    printf("%c", node[treeRoot].data);
     for (int i = 0; i < m; ++i) {
-        if (treeNode[root].child[i] != -1) {
-            preorderTraverse(treeNode, treeNode[root].child[i]);
+        if (node[treeRoot].child[i] != -1) {
+            preorderTraverse(node, node[treeRoot].child[i]);
         }
     }
 }

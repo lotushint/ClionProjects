@@ -45,6 +45,7 @@ add_executable(SpecialMatrixStripMatrix string_array_specialmatrix/specialmatrix
 #树型结构——树的存储方式（双亲表示法，孩子表示法（指针方式，数组方式，链表方式），孩子兄弟表示法），树的构造和遍历（前序遍历，后序遍历，层次遍历）
 add_executable(TreeStorageStructure tree/treestoragestructure/ParentalRepresentation.h tree/treestoragestructure/ChildRepresentation1.h tree/treestoragestructure/ChildRepresentation2.h tree/treestoragestructure/ChildRepresentation3.h tree/treestoragestructure/KidBrotherRepresentation.h tree/traverse/Traverse.h tree/test/ChildRepresentation1Traverse.c)
 add_executable(BracketToChildRepresentation tree/brackettochild/BracketToChildRepresentation.h tree/test/BracketToChildRepresentation.c)
+add_executable(LevelToChildRepresentation tree/leveltochild/LevelToChildRepresentation.h tree/test/LevelToChildRepresentation.c)
 
 #7
 #顺序存储完全（满）二叉树

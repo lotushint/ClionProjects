@@ -16,6 +16,7 @@ D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-buil
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/SpecialMatrixStripMatrix.dir
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/TreeStorageStructure.dir
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/BracketToChildRepresentation.dir
+D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/LevelToChildRepresentation.dir
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/BinaryTree.dir
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/rebuild_cache.dir
