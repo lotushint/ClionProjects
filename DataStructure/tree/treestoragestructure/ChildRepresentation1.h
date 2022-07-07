@@ -8,7 +8,7 @@
 #define m 3 //树的度
 
 typedef char datatype;
-typedef struct node {
+typedef struct Node {
     datatype data;
     /**
      * 指向子女的指针数组

@@ -10,7 +10,7 @@ typedef char datatype;
 /**
  * 树的双亲表示法
  */
-typedef struct node {
+typedef struct Node {
     datatype data;
     /**
      * 结点双亲的下标

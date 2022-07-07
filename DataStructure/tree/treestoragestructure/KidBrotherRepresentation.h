@@ -6,7 +6,7 @@
 #ifndef DATASTRUCTURE_KIDBROTHERREPRESENTATION_H
 #define DATASTRUCTURE_KIDBROTHERREPRESENTATION_H
 typedef char datatype;
-typedef struct node {
+typedef struct Node {
     datatype data;
     struct TreeNode *firstChild, *rightBrother;
 } TreeNode, *pNode;

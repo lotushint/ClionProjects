@@ -14,7 +14,7 @@ typedef char datatype;
 /**
  * 树的扩充孩子表示法中结点的类型
  */
-typedef struct node {
+typedef struct Node {
     datatype data;
     int child[m];
     /**

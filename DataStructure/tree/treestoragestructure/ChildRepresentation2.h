@@ -8,7 +8,7 @@
 #define m 3 //树的度
 #define MAXSIZE 100 //存放树结点的数组大小
 typedef char datatype;
-typedef struct node {
+typedef struct Node {
     datatype data;
     int child[m];
 } TreeNode;

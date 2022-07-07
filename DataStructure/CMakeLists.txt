@@ -5,27 +5,27 @@ set(CMAKE_C_STANDARD 99)
 
 #2
 #线性表——顺序存储
-add_executable(LinearListSequentialStorage linearList/sequentialstorage/test/SequenceList.c linearList/sequentialstorage/SequenceList.h)
-#线性表顺序存储——顺序栈及其应用（括号匹配，后缀表达式计算）
-add_executable(LinearListSequentialStorageStack linearList/sequentialstorage/test/SequentialStack.c linearList/sequentialstorage/SequentialStack.h)
-#线性表顺序存储——顺序队列
-add_executable(LinearListSequentialStorageQueue linearList/sequentialstorage/test/SequentialQueue.c linearList/sequentialstorage/SequentialQueue.h)
-#线性表顺序存储——顺序循环队列（解决队列空间浪费）
-add_executable(LinearListSequentialStorageCircularQueue linearList/sequentialstorage/test/SequentialCircularQueue.c linearList/sequentialstorage/SequentialCircularQueue.h)
+add_executable(LinearListSequentialStorage linearlist/sequentialstorage/test/SequenceList.c linearlist/sequentialstorage/SequenceList.h)
+#线性表——顺序存储——顺序栈及其应用（括号匹配，后缀表达式计算）
+add_executable(LinearListSequentialStorageStack linearlist/sequentialstorage/test/SequentialStack.c linearlist/sequentialstorage/SequentialStack.h)
+#线性表——顺序存储——顺序队列
+add_executable(LinearListSequentialStorageQueue linearlist/sequentialstorage/test/SequentialQueue.c linearlist/sequentialstorage/SequentialQueue.h)
+#线性表——顺序存储——顺序循环队列（解决队列空间浪费）
+add_executable(LinearListSequentialStorageCircularQueue linearlist/sequentialstorage/test/SequentialCircularQueue.c linearlist/sequentialstorage/SequentialCircularQueue.h)
 
 #3
 #线性表——链式存储
-add_executable(LinearListLinkedStorage linearList/linkedstorage/test/SinglyLinkedList.c linearList/linkedstorage/SinglyLinkedList.h)
-#线性表链式存储——带头结点的单链表
-add_executable(LinearListLinkedStorageLeadingNodeSinglyLinkedList linearList/linkedstorage/test/LeadingNodeSinglyLinkedList.c linearList/linkedstorage/LeadingNodeSinglyLinkedList.h)
-#线性表链式存储——循环单链表
-add_executable(LinearListLinkedStorageCircularSinglyLinkedList linearList/linkedstorage/test/CircularSinglyLinkedList.c linearList/linkedstorage/CircularSinglyLinkedList.h)
-#线性表链式存储——双链表
-add_executable(LinearListLinkedStorageDoublyLinkedList linearList/linkedstorage/DoublyLinkedList.h linearList/linkedstorage/test/DoublyLinkedList.c)
-#线性表链式存储——链式栈
-add_executable(LinearListLinkedStorageChainStack linearList/linkedstorage/LinkedStack.h linearList/linkedstorage/test/LinkedStack.c)
-#线性表链式存储——链式栈
-add_executable(LinearListLinkedStorageLinkedQueue linearList/linkedstorage/LinkedQueue.h linearList/linkedstorage/test/LinkedQueue.c)
+add_executable(LinearListLinkedStorage linearlist/linkedstorage/test/SinglyLinkedList.c linearlist/linkedstorage/SinglyLinkedList.h)
+#线性表——链式存储——带头结点的单链表
+add_executable(LinearListLinkedStorageLeadingNodeSinglyLinkedList linearlist/linkedstorage/test/LeadingNodeSinglyLinkedList.c linearlist/linkedstorage/LeadingNodeSinglyLinkedList.h)
+#线性表——链式存储——循环单链表
+add_executable(LinearListLinkedStorageCircularSinglyLinkedList linearlist/linkedstorage/test/CircularSinglyLinkedList.c linearlist/linkedstorage/CircularSinglyLinkedList.h)
+#线性表——链式存储——双链表
+add_executable(LinearListLinkedStorageDoublyLinkedList linearlist/linkedstorage/DoublyLinkedList.h linearlist/linkedstorage/test/DoublyLinkedList.c)
+#线性表——链式存储——链式栈
+add_executable(LinearListLinkedStorageChainStack linearlist/linkedstorage/LinkedStack.h linearlist/linkedstorage/test/LinkedStack.c)
+#线性表——链式存储——链式栈
+add_executable(LinearListLinkedStorageLinkedQueue linearlist/linkedstorage/LinkedQueue.h linearlist/linkedstorage/test/LinkedQueue.c)
 
 #4
 #字符串——顺序存储
@@ -44,9 +44,13 @@ add_executable(SpecialMatrixStripMatrix string_array_specialmatrix/specialmatrix
 #6
 #树型结构——树的存储方式（双亲表示法，孩子表示法（指针方式，数组方式，链表方式），孩子兄弟表示法），树的构造和遍历（前序遍历，后序遍历，层次遍历）
 add_executable(TreeStorageStructure tree/treestoragestructure/ParentalRepresentation.h tree/treestoragestructure/ChildRepresentation1.h tree/treestoragestructure/ChildRepresentation2.h tree/treestoragestructure/ChildRepresentation3.h tree/treestoragestructure/KidBrotherRepresentation.h tree/traverse/Traverse.h tree/test/ChildRepresentation1Traverse.c)
+#树型结构——树的线性表示——树的括号表示（将树的括号表示转换成树的孩子表示（数组方式））
 add_executable(BracketToChildRepresentation tree/brackettochild/BracketToChildRepresentation.h tree/test/BracketToChildRepresentation.c)
+#树型结构——树的线性表示——树的层号表示（将树的层号表示转换成树的扩充孩子表示（增加一个域指向结点双亲的下标））
 add_executable(LevelToChildRepresentation tree/leveltochild/LevelToChildRepresentation.h tree/test/LevelToChildRepresentation.c)
 
 #7
-#顺序存储完全（满）二叉树
-add_executable(BinaryTree binarytree/BinaryTree.h binarytree/test/BinaryTree.c)
+#二叉树——二叉树的存储结构——顺序存储（完全二叉树的顺序存储，一般二叉树的顺序存储，一般二叉树的顺序存储扩展（增加一个存放双亲下标的域））
+add_executable(SequentialStorageOfBinaryTree binarytree/binarytreestorage/sequentialstorage/CompleteBinaryTreeStructure.h binarytree/binarytreestorage/sequentialstorage/GeneralBinaryTreeStructure.h binarytree/binarytreestorage/sequentialstorage/GeneralBinaryTreeStructure2.h binarytree/test/Seq.c)
+#二叉树——二叉树的存储结构——链式存储（链式存储，链式存储扩展（增加了一个指针域指向结点的双亲）,二叉树的遍历（递归方式），二叉树的创建（前序遍历））
+add_executable(LinkedStorageOfBinaryTree binarytree/binarytreestorage/linkedstorage/BinaryTreeStructure.h binarytree/binarytreestorage/linkedstorage/BinaryTreeStructure2.h binarytree/traverse/BinaryTraverse.h binarytree/binarytreecreation/BinaryTreeCreation.h binarytree/test/BinaryTraverseRecursion.c)

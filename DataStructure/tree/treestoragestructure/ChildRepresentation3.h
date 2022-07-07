@@ -20,7 +20,7 @@ typedef struct childNode {
 /**
  * 树的结点类型
  */
-typedef struct node {
+typedef struct Node {
     datatype data;
     child firstChild;
 } TreeNode;

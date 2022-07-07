@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct node {
+typedef struct Node {
     char data;
     struct TreeNode *next;
 } linkedStringNode;
