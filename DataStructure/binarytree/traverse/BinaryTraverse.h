@@ -1,6 +1,6 @@
 //
 // Created by lotushint on 2022/6/26.
-// 二叉树的遍历
+// 二叉树的遍历（递归方式）
 //
 
 #ifndef DATASTRUCTURE_BINARYTRAVERSE_H

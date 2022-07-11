@@ -5,6 +5,9 @@
 
 #ifndef DATASTRUCTURE_BINARYTREECREATION_H
 #define DATASTRUCTURE_BINARYTREECREATION_H
+
+#include <malloc.h>
+
 /**
  * 根据 前序遍历 结果创建一颗给定二叉树
  * @return 二叉树树根地址
@@ -22,4 +25,5 @@ BinaryTree createBinaryTree() {
     }
     return tree;
 }
+
 #endif //DATASTRUCTURE_BINARYTREECREATION_H

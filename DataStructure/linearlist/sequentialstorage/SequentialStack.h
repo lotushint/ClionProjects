@@ -15,13 +15,13 @@ typedef int datatype;
 typedef struct {
     datatype a[MAXSIZE];
     int top;
-} sequence_stack;
+} SequentialStack;
 
 /**
  * 栈（顺序存储）初始化
- * @param st 指向 sequence_stack 型变量的指针变量 st
+ * @param st 指向 SequentialStack 型变量的指针变量 st
  */
-void init(sequence_stack *st) {
+void init(SequentialStack *st) {
     st->top = 0;
 };
 
@@ -30,7 +30,7 @@ void init(sequence_stack *st) {
  * @param st sequence_stack型变量st
  * @return 返回 1 表示空，0 表示非空
  */
-int empty(sequence_stack st) {
+int empty(SequentialStack st) {
     return st.top == 0 ? 1 : 0;
 };
 
@@ -39,7 +39,7 @@ int empty(sequence_stack st) {
  * @param st sequence_stack型变量st
  * @return 返回栈顶结点值
  */
-datatype read(sequence_stack st) {
+datatype read(SequentialStack st) {
     if (empty(st)) {
         printf("\n栈是空的");
         exit(1);
@@ -50,10 +50,10 @@ datatype read(sequence_stack st) {
 
 /**
  * 栈（顺序存储）的插入（进栈）操作
- * @param st 指向 sequence_stack 型变量的指针变量 st
+ * @param st 指向 SequentialStack 型变量的指针变量 st
  * @param x datatype型变量 x，要插入的值
  */
-void push(sequence_stack *st, datatype x) {
+void push(SequentialStack *st, datatype x) {
     if (st->top == MAXSIZE) {
         printf("\n栈是满的");
         exit(1);
@@ -64,9 +64,9 @@ void push(sequence_stack *st, datatype x) {
 
 /**
  * 栈（顺序存储）的删除（出栈）操作
- * @param st 指向 sequence_stack 型变量的指针变量 st
+ * @param st 指向 SequentialStack 型变量的指针变量 st
  */
-void pop(sequence_stack *st) {
+void pop(SequentialStack *st) {
     if (st->top == 0) {
         printf("\n栈是空的!");
         exit(1);

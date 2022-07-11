@@ -11,7 +11,7 @@
  */
 int matchBrackets(char c[]) {
     int i = 0;
-    sequence_stack st;
+    SequentialStack st;
     init(&st);
     while (c[i] != '#') {
         switch (c[i]) {
@@ -223,7 +223,7 @@ int main() {
     /*
      * 栈测试
      */
-    sequence_stack st;
+    SequentialStack st;
     init(&st);
     push(&st, 5);
     push(&st, 8);
