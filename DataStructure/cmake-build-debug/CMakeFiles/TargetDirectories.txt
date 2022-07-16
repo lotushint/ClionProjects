@@ -20,5 +20,7 @@ D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-buil
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/SequentialStorageOfBinaryTree.dir
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/LinkedStorageOfBinaryTree.dir
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/InorderThreadingBinaryTree.dir
+D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/AdjacencyMatrix.dir
+D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/AdjacencyList.dir
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/rebuild_cache.dir

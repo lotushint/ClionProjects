@@ -56,3 +56,9 @@ add_executable(SequentialStorageOfBinaryTree binarytree/binarytreestorage/sequen
 add_executable(LinkedStorageOfBinaryTree binarytree/binarytreestorage/linkedstorage/BinaryTreeStructure.h binarytree/binarytreestorage/linkedstorage/BinaryTreeStructure2.h binarytree/traverse/BinaryTraverse.h binarytree/traverse/BinaryTraversalNon_Recursive.h binarytree/binarytreecreation/BinaryTreeCreation.h binarytree/test/BinaryTraverseRecursionAndNon_Recursion.c binarytree/binarytreeotheroperations/BinaryTreeOtherOperations.h)
 #二叉树——穿线二叉树（中序穿线二叉树）
 add_executable(InorderThreadingBinaryTree binarytree/inorderthreadingbinarytree/storage/InorderThreadingBinaryTreeStorage.h binarytree/inorderthreadingbinarytree/test/InorderThreadingBinaryTree.c binarytree/inorderthreadingbinarytree/creation/InorderThreadingBinaryTreeCreation.h binarytree/inorderthreadingbinarytree/traverse/InorderThreadingBinaryTreeTraverse.h)
+
+#8
+#图——图的基本存储结构——邻接矩阵
+add_executable(AdjacencyMatrix graph/AdjacencyMatrix.h graph/test/AdjacencyMatrix.c)
+#图——图的基本存储结构——邻接表
+add_executable(AdjacencyList graph/test/AdjacencyList.c graph/AdjacencyList.h)
