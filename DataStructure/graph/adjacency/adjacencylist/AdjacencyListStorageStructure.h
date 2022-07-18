@@ -1,10 +1,10 @@
 //
-// Created by lotushint on 2022/7/16.
-// 邻接表
+// Created by lotushint on 2022/7/18.
+// 邻接表存储结构
 //
 
-#ifndef DATASTRUCTURE_ADJACENCYLIST_H
-#define DATASTRUCTURE_ADJACENCYLIST_H
+#ifndef DATASTRUCTURE_ADJACENCYLISTSTORAGESTRUCTURE_H
+#define DATASTRUCTURE_ADJACENCYLISTSTORAGESTRUCTURE_H
 #define M 20 //图的最大顶点数
 /**
  * 顶点信息数据类型
@@ -19,10 +19,17 @@ typedef struct node {
      */
     int adjacentVertex;
     /**
+     * 权值
+     */
+    int weight;
+    /**
      * 指针域，指向下一个
      */
-    struct Node *next;
+    struct node *next;
 } EdgeNode;
+/**
+ * 头结点类型
+ */
 typedef struct vertexNode {
     /**
      * 顶点信息
@@ -49,5 +56,5 @@ typedef struct {
      * 图的边数
      */
     int edgeNumber;
-} AdjacencyList;
-#endif //DATASTRUCTURE_ADJACENCYLIST_H
+} AdjacencyListGraph;
+#endif //DATASTRUCTURE_ADJACENCYLISTSTORAGESTRUCTURE_H

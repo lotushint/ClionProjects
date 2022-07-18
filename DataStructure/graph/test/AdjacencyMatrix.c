@@ -2,12 +2,12 @@
 // Created by lotushint on 2022/7/16.
 // 邻接矩阵
 //
-#include "../AdjacencyMatrix.h"
+#include "../adjacency/adjacencymatrix/AdjacencyMatrix.h"
 
 int main() {
-    MatrixGraph matrixGraph;
+    AdjacencyMatrixGraph matrixGraph;
     createAdjacencyMatrixGraph(&matrixGraph,
-                               "../graph/files/graph.txt",
+                               "../graph/adjacency/files/graph.txt",
                                0);
     return 0;
 }

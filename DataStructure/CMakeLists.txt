@@ -59,6 +59,10 @@ add_executable(InorderThreadingBinaryTree binarytree/inorderthreadingbinarytree/
 
 #8
 #图——图的基本存储结构——邻接矩阵
-add_executable(AdjacencyMatrix graph/AdjacencyMatrix.h graph/test/AdjacencyMatrix.c)
+add_executable(AdjacencyMatrix graph/adjacency/adjacencymatrix/AdjacencyMatrix.h graph/test/AdjacencyMatrix.c)
 #图——图的基本存储结构——邻接表
-add_executable(AdjacencyList graph/test/AdjacencyList.c graph/AdjacencyList.h)
+add_executable(AdjacencyList graph/adjacency/adjacencylist/AdjacencyListStorageStructure.h graph/adjacency/adjacencylist/AdjacencyListCreation.h graph/test/AdjacencyList.c)
+#图——图的基本存储结构——邻接多重表
+add_executable(AdjacencyMultiList graph/test/AdjacencyMultiList.c)
+#图——图的遍历——深度优先遍历
+add_executable(Depth-firstTraversal graph/traverse/Depth-firstTraversal.h graph/test/Depth-firstTraversal.c)
