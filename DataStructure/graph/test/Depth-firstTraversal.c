@@ -13,7 +13,7 @@
 
 int main() {
     AdjacencyListGraph listGraph;
-    createAdjacencyListGraph(&listGraph, "../graph/adjacency/files/depth-firstTraversalGraph.txt", 0);
+    createAdjacencyListGraph(&listGraph, "../graph/adjacency/files/depth_breadth-firstTraversalGraph.txt", 0);
     depth_firstTraversal(listGraph);
     return 0;
 }

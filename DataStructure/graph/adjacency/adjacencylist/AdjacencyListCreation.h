@@ -49,7 +49,7 @@ void createAdjacencyListGraph(AdjacencyListGraph *graph, char *filename, int c) 
                 edgeNodePointer->weight = w;
                 edgeNodePointer->next = graph->adjacencyList[j].firstEdge;
                 //将新结点插入顶点 vj 的边表结点
-                graph->adjacencyList[j].firstEdge = edgeNodePointer->next;
+                graph->adjacencyList[j].firstEdge = edgeNodePointer;
             }
         }
         fclose(fp);

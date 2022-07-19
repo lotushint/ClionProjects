@@ -10,6 +10,9 @@
 #include "../adjacency/adjacencylist/AdjacencyListStorageStructure.h"
 #include "../adjacency/adjacencylist/AdjacencyListCreation.h"
 
+/**
+ * 全局标志向量
+ */
 int visited[M];
 
 /**
