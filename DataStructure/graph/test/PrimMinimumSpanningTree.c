@@ -1,6 +1,6 @@
 //
 // Created by lotushint on 2022/7/19.
-// Prim最小生成树算法
+// Prim 最小生成树算法
 // 输入：
 //      ../graph/minimumspanningtree/files/graph.txt
 // 输出：

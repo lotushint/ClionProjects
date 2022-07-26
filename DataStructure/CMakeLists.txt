@@ -70,3 +70,5 @@ add_executable(Depth-firstTraversal graph/traverse/Depth-firstTraversal.h graph/
 add_executable(Breadth-firstTraversal graph/traverse/Breadth-firstTraversal.h graph/test/Breadth-firstTraversal.c)
 #图——生成树与最小生成树——Prim最小生成树算法
 add_executable(PrimMinimumSpanningTree graph/minimumspanningtree/primminimumspanningtree/PrimMinimumSpanningTree.h graph/test/PrimMinimumSpanningTree.c)
+#图——生成树与最小生成树——Kruskal最小生成树算法
+add_executable(KruskalMinimumSpanningTree graph/minimumspanningtree/kruskalminimumspanningtree/KruskalMinimumSpanningTree.h graph/test/KruskalMinimumSpanningTree.c)

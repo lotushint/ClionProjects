@@ -31,7 +31,7 @@ void primMinimumSpanningTree(AdjacencyMatrixGraph matrixGraph, edge treeEdge[M -
     edge x;
     int v, k, min, s, j, d;
     /*
-     * 建立初始入选点，并初始化生成树边集 treeEdge
+     * 1.建立初始入选点，并初始化生成树边集 treeEdge
      */
     for (v = 1; v <= matrixGraph.vertexNumber - 1; v++) {
         /*
@@ -42,7 +42,7 @@ void primMinimumSpanningTree(AdjacencyMatrixGraph matrixGraph, edge treeEdge[M -
         treeEdge[v - 1].length = matrixGraph.edge[0][v];
     }
     /*
-     * 依次求当前（第 k 条）最小两栖边，并加入 treeEdge
+     * 2.依次求当前（第 k 条）最小两栖边，并加入 treeEdge
      */
     for (k = 0; k <= matrixGraph.vertexNumber - 3; ++k) {
         min = treeEdge[k].length;
@@ -63,7 +63,7 @@ void primMinimumSpanningTree(AdjacencyMatrixGraph matrixGraph, edge treeEdge[M -
         treeEdge[s] = treeEdge[k];
         treeEdge[k] = x;
         /**
-         * 由于新顶点 v 的加入，修改两栖边的基本信息
+         * 3.由于新顶点 v 的加入，修改两栖边的基本信息
          */
         for (j = k + 1; j <= matrixGraph.vertexNumber - 2; ++j) {
             d = matrixGraph.edge[v][treeEdge[j].end];
