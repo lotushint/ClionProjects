@@ -2,9 +2,10 @@
 // Created by lotushint on 2022/7/26.
 //
 
-#include "../singlesourceshortestpath/SingleSourceShortestPath.h"
+#include "../shortestpath/singlesourceshortestpath/SingleSourceShortestPath.h"
 
 int main() {
+    setvbuf(stdout, NULL, _IONBF, 0);
     AdjacencyMatrixGraph matrixGraph;
     path path;
     dist dist;

@@ -73,4 +73,6 @@ add_executable(PrimMinimumSpanningTree graph/minimumspanningtree/primminimumspan
 #图——生成树与最小生成树——Kruskal最小生成树算法
 add_executable(KruskalMinimumSpanningTree graph/minimumspanningtree/kruskalminimumspanningtree/KruskalMinimumSpanningTree.h graph/test/KruskalMinimumSpanningTree.c)
 #图——最短路径——单源最短路径
-add_executable(SingleSourceShortestPath graph/test/SingleSourceShortestPath.c graph/singlesourceshortestpath/SingleSourceShortestPath.h)
+add_executable(SingleSourceShortestPath graph/test/SingleSourceShortestPath.c graph/shortestpath/singlesourceshortestpath/SingleSourceShortestPath.h)
+#图——所有顶点对的最短路径
+add_executable(ShortestPathForAllVertexPairs graph/test/ShortestPathForAllVertexPairs.c graph/shortestpath/shortestpathforallvertexpairs/ShortestPathForAllVertexPairs.h)
