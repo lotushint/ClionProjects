@@ -74,5 +74,7 @@ add_executable(PrimMinimumSpanningTree graph/minimumspanningtree/primminimumspan
 add_executable(KruskalMinimumSpanningTree graph/minimumspanningtree/kruskalminimumspanningtree/KruskalMinimumSpanningTree.h graph/test/KruskalMinimumSpanningTree.c)
 #图——最短路径——单源最短路径
 add_executable(SingleSourceShortestPath graph/test/SingleSourceShortestPath.c graph/shortestpath/singlesourceshortestpath/SingleSourceShortestPath.h)
-#图——所有顶点对的最短路径
+#图——所有顶点对的最短路径（单源最短路径，floyd算法）
 add_executable(ShortestPathForAllVertexPairs graph/test/ShortestPathForAllVertexPairs.c graph/shortestpath/shortestpathforallvertexpairs/ShortestPathForAllVertexPairs.h)
+#图——拓扑排序
+add_executable(TopologicalSort graph/test/TopologicalSort.c graph/topologicalsort/TopologicalSort.h)
