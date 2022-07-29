@@ -93,6 +93,12 @@ void dijkstra(AdjacencyMatrixGraph matrixGraph, int v0, path path, dist dist) {
     }
 }
 
+/**
+ * 输出有向图的最短路径
+ * @param matrixGraph 邻接矩阵
+ * @param path 路径向量
+ * @param dist 距离向量
+ */
 void outputShortestPathDirectedGraph(AdjacencyMatrixGraph matrixGraph, const path path, dist dist) {
     /**
      * 定义栈 stack 并初始化

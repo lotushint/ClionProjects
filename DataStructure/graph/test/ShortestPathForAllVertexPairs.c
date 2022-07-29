@@ -24,8 +24,10 @@ int main() {
 
 
     //2.Floyd算法
+    printf("\n使用Floyd算法求所有顶点对的最短路径：");
     pathway pathway;
     distance distance;
     floyd(matrixGraph, pathway, distance);
+    outputFloydShortestPathDirectedGraph(matrixGraph, pathway, distance);
     return 0;
 }

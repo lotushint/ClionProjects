@@ -6,11 +6,17 @@
 #ifndef DATASTRUCTURE_SHORTESTPATHFORALLVERTEXPAIRS_H
 #define DATASTRUCTURE_SHORTESTPATHFORALLVERTEXPAIRS_H
 
-#include "../adjacency/adjacencymatrix/AdjacencyMatrix.h"
+#include "../../adjacency/adjacencymatrix/AdjacencyMatrix.h"
 
 typedef int distance[M][M];
 typedef int pathway[M][M];
 
+/**
+ * Floyd方法求所有顶点对的最短路径
+ * @param matrixGraph 邻接矩阵
+ * @param path 路径向量
+ * @param dist 距离向量
+ */
 void floyd(AdjacencyMatrixGraph matrixGraph, pathway path, distance dist) {
     //1.初始化
     for (int i = 0; i < matrixGraph.vertexNumber; ++i) {
@@ -33,6 +39,35 @@ void floyd(AdjacencyMatrixGraph matrixGraph, pathway path, distance dist) {
                     path[i][j] = k;
                 }
             }
+        }
+    }
+}
+
+/**
+ * 输出有向图的最短路径
+ * @param matrixGraph 邻接矩阵
+ * @param pathway 路径向量
+ * @param distance 距离向量
+ */
+void outputFloydShortestPathDirectedGraph(AdjacencyMatrixGraph matrixGraph, pathway pathway, distance distance) {
+    /**
+     * 中转顶点
+     */
+    int transitVertex;
+    for (int i = 0; i < matrixGraph.vertexNumber; ++i) {
+        for (int j = 0; j < matrixGraph.vertexNumber; ++j) {
+            printf("\nDistance:%d---%d  %d  ", i, j, distance[i][j]);
+            transitVertex = i;
+            //起点
+            printf("Path: %d ", transitVertex);
+
+            while (pathway[transitVertex][j] != -1 && transitVertex != pathway[transitVertex][j]) {
+                transitVertex = pathway[transitVertex][j];
+                printf(" %d ", transitVertex);
+            }
+
+            //终点
+            printf(" %d \n", j);
         }
     }
 }
