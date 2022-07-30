@@ -78,3 +78,5 @@ add_executable(SingleSourceShortestPath graph/test/SingleSourceShortestPath.c gr
 add_executable(ShortestPathForAllVertexPairs graph/test/ShortestPathForAllVertexPairs.c graph/shortestpath/shortestpathforallvertexpairs/ShortestPathForAllVertexPairs.h)
 #图——拓扑排序
 add_executable(TopologicalSort graph/test/TopologicalSort.c graph/topologicalsort/TopologicalSort.h)
+#图——关键路径
+add_executable(CriticalPath graph/test/CriticalPath.c graph/criticalpath/CriticalPath.h)

@@ -39,7 +39,7 @@ typedef struct de {
     int inDegree;
 } VertexNode;
 /**
- * AOv 网络的邻接表结构
+ * AOV 网络的邻接表结构
  */
 typedef struct {
     VertexNode adjacencyList[M];
