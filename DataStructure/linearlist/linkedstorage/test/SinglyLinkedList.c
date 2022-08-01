@@ -4,7 +4,7 @@
 #include "../SinglyLinkedList.h"
 
 int main() {
-    TreeNode *head;
+    LinkNode *head;
     head = init();
     display(head);
     head = insert(head, 0, 0);

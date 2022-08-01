@@ -10,19 +10,19 @@
 
 /**
  * 建立一个空的循环单链表
- * @return 指向 TreeNode 类型变量的指针
+ * @return 指向 LinkNode 类型变量的指针
  */
-TreeNode *circularInit() {
+LinkNode *circularInit() {
     return NULL;
 }
 
 /**
  * 获得循环单链表的最后一个结点的存储地址
- * @param head 指向 TreeNode 类型的指针变量 head
- * @return 指向 TreeNode 类型变量的指针
+ * @param head 指向 LinkNode 类型的指针变量 head
+ * @return 指向 LinkNode 类型变量的指针
  */
-TreeNode *circularRear(TreeNode *head) {
-    TreeNode *p;
+LinkNode *circularRear(LinkNode *head) {
+    LinkNode *p;
     p = head;
     while (p && p->next != head) {
         p = p->next;
@@ -32,10 +32,10 @@ TreeNode *circularRear(TreeNode *head) {
 
 /**
  * 输出循环单链表中各个结点的值
- * @param head 指向 TreeNode 类型的指针变量 head
+ * @param head 指向 LinkNode 类型的指针变量 head
  */
-void circularDisplay(TreeNode *head) {
-    TreeNode *p;
+void circularDisplay(LinkNode *head) {
+    LinkNode *p;
     if (!head) {
         printf("\n循环单链表是空的！\n");
     } else {
@@ -62,12 +62,12 @@ void circularDisplay(TreeNode *head) {
 
 /**
  * 循环单链表中查找值为 x 的结点的存储地址
- * @param head 指向 TreeNode 类型变量的指针变量 head
+ * @param head 指向 LinkNode 类型变量的指针变量 head
  * @param x datatype 类型的变量 x，要查找的值
- * @return 指向 TreeNode 类型变量的指针
+ * @return 指向 LinkNode 类型变量的指针
  */
-TreeNode *circularFind(TreeNode *head, datatype x) {
-    TreeNode *p;
+LinkNode *circularFind(LinkNode *head, datatype x) {
+    LinkNode *p;
     p = head;
     if (!head) {
         printf("\n循环单链表是空的！无法找指定结点！\n");
@@ -94,25 +94,25 @@ TreeNode *circularFind(TreeNode *head, datatype x) {
 /**
  * 循环单链表第 i 个结点后插入值为 x 的新结点<br>
  * 注意：插入的结点成为表中第一个结点，那么必须修改表中最后一个结点的指针域
- * @param head 指向 TreeNode 类型变量的指针变量 head
+ * @param head 指向 LinkNode 类型变量的指针变量 head
  * @param x 类型的变量 x，要插入的值
  * @param i 要插入的结点的前驱结点位置
- * @return 指向 TreeNode 类型变量的指针
+ * @return 指向 LinkNode 类型变量的指针
  */
-TreeNode *circularInsert(TreeNode *head, datatype x, int i) {
+LinkNode *circularInsert(LinkNode *head, datatype x, int i) {
     /**
      * 待插入结点
      */
-    TreeNode *p;
+    LinkNode *p;
     /**
      * 指针
      */
-    TreeNode *q;
+    LinkNode *q;
     /**
      * 尾结点指针
      */
-    TreeNode *rear;
-    p = (TreeNode *) malloc(sizeof(TreeNode));
+    LinkNode *rear;
+    p = (LinkNode *) malloc(sizeof(LinkNode));
     p->info = x;
 
     if (i < 0) {
@@ -160,15 +160,15 @@ TreeNode *circularInsert(TreeNode *head, datatype x, int i) {
 
 /**
  * 在循环单链表中删除一个值为 x 的结点
- * @param head 指向 TreeNode 类型变量的指针变量 head
+ * @param head 指向 LinkNode 类型变量的指针变量 head
  * @param x datatype类型的变量 x，要删除的数值
- * @return 指向 TreeNode 类型变量的指针
+ * @return 指向 LinkNode 类型变量的指针
  */
-TreeNode *circularDelete(TreeNode *head, datatype x) {
+LinkNode *circularDelete(LinkNode *head, datatype x) {
     /**
      * 指针
      */
-    TreeNode *q, *pre = NULL;
+    LinkNode *q, *pre = NULL;
     q = head;
     //表为空，则无法做删除操作
     if (!head) {

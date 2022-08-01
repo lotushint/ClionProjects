@@ -53,12 +53,12 @@ typedef struct {
 
 /**
  * 求 AOE 网各事件的最早发生时间
- * @param graph AOE 网的出边表
+ * @param graphOut AOE 网的出边表
  * @param ve 事件最早发生时间向量
  * @param topologicalSequence AOE 网的拓扑排序列向量
  * @return 返回输出的顶点个数
  */
-int eventEarliestTime(AoeGraph graph, int ve[], int topologicalSequence[]) {
+int eventEarliestTime(AoeGraph graphOut, int ve[], int topologicalSequence[]) {
     int counter = 0;
     int j, v;
     int flag[M];
@@ -71,7 +71,7 @@ int eventEarliestTime(AoeGraph graph, int ve[], int topologicalSequence[]) {
     EdgeNode *edgeNodePointer;
 
     //1.初始化
-    for (int i = 0; i < graph.vertexNumber; ++i) {
+    for (int i = 0; i < graphOut.vertexNumber; ++i) {
         //初始化每个顶点的最早开始时间 ve[i] 为 0
         ve[i] = 0;
         //访问标记初始化
@@ -79,8 +79,8 @@ int eventEarliestTime(AoeGraph graph, int ve[], int topologicalSequence[]) {
     }
 
     //2.先将所有入度为 0 的顶点入队
-    for (int i = 0; i < graph.vertexNumber; ++i) {
-        if (graph.adjacencyList[i].inDegree == 0 && flag[i] == 0) {
+    for (int i = 0; i < graphOut.vertexNumber; ++i) {
+        if (graphOut.adjacencyList[i].inDegree == 0 && flag[i] == 0) {
             queue[rear++] = i;
             flag[i] = 1;
         }
@@ -89,17 +89,18 @@ int eventEarliestTime(AoeGraph graph, int ve[], int topologicalSequence[]) {
     //队列不为空时
     while (front < rear) {
         v = queue[front++];
-        printf("%c---->", graph.adjacencyList[v].vertex);
+        printf("%c---->", graphOut.adjacencyList[v].vertex);
 
         //记录拓扑排序当前元素
         topologicalSequence[counter++] = v;
 
-        edgeNodePointer = graph.adjacencyList[v].firstEdge;
+        edgeNodePointer = graphOut.adjacencyList[v].firstEdge;
 
+        //将所有与 v 邻接的顶点的入度减 1
         while (edgeNodePointer) {
             j = edgeNodePointer->adjacentVertex;
             //若入度为 0 ，则将进队
-            if (--graph.adjacencyList[j].inDegree == 0 && flag[j] == 0) {
+            if (--graphOut.adjacencyList[j].inDegree == 0 && flag[j] == 0) {
                 queue[rear++] = j;
                 flag[j] = 1;
             }
@@ -115,21 +116,21 @@ int eventEarliestTime(AoeGraph graph, int ve[], int topologicalSequence[]) {
 
 /**
  * 求 AOE 网各事件的最晚允许开始时间
- * @param graph AOE 网的入边表
+ * @param graphIn AOE 网的入边表
  * @param ve 事件最早发生时间向量
  * @param vl 事件最晚允许发生时间向量
  * @param topologicalSequence AOE 网的拓扑排序列向量
  */
-void eventLatestTime(AoeGraph graph, const int ve[], int vl[], int topologicalSequence[]) {
-    int k = graph.vertexNumber - 1, j, v;
+void eventLatestTime(AoeGraph graphIn, const int ve[], int vl[], const int topologicalSequence[]) {
+    int k = graphIn.vertexNumber - 1, j, v;
     EdgeNode *edgeNodePointer;
     //初始化 AOE 网中每个顶点的最晚允许开始时间为关键路径长度
-    for (int i = 0; i < graph.vertexNumber; ++i) {
-        vl[i] = ve[topologicalSequence[graph.vertexNumber - 1]];
+    for (int i = 0; i < graphIn.vertexNumber; ++i) {
+        vl[i] = ve[topologicalSequence[graphIn.vertexNumber - 1]];
     }
     while (k > -1) {
         v = topologicalSequence[k];
-        edgeNodePointer = graph.adjacencyList[v].firstEdge;
+        edgeNodePointer = graphIn.adjacencyList[v].firstEdge;
         while (edgeNodePointer) {
             j = edgeNodePointer->adjacentVertex;
             if (vl[v] - edgeNodePointer->weight < vl[j]) {

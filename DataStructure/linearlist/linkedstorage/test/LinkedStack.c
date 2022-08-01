@@ -5,7 +5,7 @@
 #include "stdio.h"
 
 int main() {
-    TreeNode *top;
+    LinkNode *top;
     top = init();
 //    display(top);
 

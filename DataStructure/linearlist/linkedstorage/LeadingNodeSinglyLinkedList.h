@@ -12,27 +12,27 @@
 typedef int datatype;
 typedef struct linkNode {
     datatype info;
-    struct linkNode *next;
-} TreeNode;
+    struct LinkNode *next;
+} LinkNode;
 
 /**
  * 建立一个空的带头结点的单链表
- * @return 指向 TreeNode 类型变量的指针
+ * @return 指向 LinkNode 类型变量的指针
  */
-TreeNode *init() {
-    TreeNode *head;
+LinkNode *init() {
+    LinkNode *head;
     //注意这里初始化
-    head = (TreeNode *) malloc(sizeof(TreeNode));
+    head = (LinkNode *) malloc(sizeof(LinkNode));
     head->next = NULL;
     return head;
 }
 
 /**
  * 输出带头结点的单链表中各个结点的值
- * @param head 指向 TreeNode 类型变量的指针
+ * @param head 指向 LinkNode 类型变量的指针
  */
-void display(TreeNode *head) {
-    TreeNode *p;
+void display(LinkNode *head) {
+    LinkNode *p;
     //从第一个（实际）结点开始
     p = head->next;
     if (!p) {
@@ -48,13 +48,13 @@ void display(TreeNode *head) {
 
 /**
  * 在带头结点的单链表中查找第 i 个结点 地址
- * @param head 指向 TreeNode 类型变量的指针
+ * @param head 指向 LinkNode 类型变量的指针
  * @param i int 类型变量
- * @return 指向 TreeNode 类型变量的指针，头指针
+ * @return 指向 LinkNode 类型变量的指针，头指针
  */
-TreeNode *find(TreeNode *head, int i) {
+LinkNode *find(LinkNode *head, int i) {
     int j = 0;
-    TreeNode *p;
+    LinkNode *p;
     p = head;
     if (i < 0) {
         printf("\n带头结点的单链表中不存在第%d个结点！", i);
@@ -73,24 +73,24 @@ TreeNode *find(TreeNode *head, int i) {
 
 /**
  * 在带头结点的中单链表第 i 个结点后插入值为 x 的新结点
- * @param head 指向 TreeNode 类型变量的指针，头指针
+ * @param head 指向 LinkNode 类型变量的指针，头指针
  * @param x datatype 类型变量
  * @param i int类型变量
- * @return 指向 TreeNode 类型变量的指针，头指针 head
+ * @return 指向 LinkNode 类型变量的指针，头指针 head
  */
-TreeNode *insert(TreeNode *head, datatype x, int i) {
+LinkNode *insert(LinkNode *head, datatype x, int i) {
     /**
     * p:动态获取存储空间
     * q:第 i 个结点
     */
-    TreeNode *p, *q;
+    LinkNode *p, *q;
     q = find(head, i);
     //如果没有找到
     if (!q) {
         printf("\n带头结点的单链表中不存在第%d个结点！不能插入%d!", i, x);
         return head;
     }
-    p = (TreeNode *) malloc(sizeof(TreeNode));
+    p = (LinkNode *) malloc(sizeof(LinkNode));
     p->info = x;
     p->next = q->next;
     q->next = p;
@@ -99,16 +99,16 @@ TreeNode *insert(TreeNode *head, datatype x, int i) {
 
 /**
  * 在带头结点的单链表中删除一个值为 x 的结点
- * @param head 指向 TreeNode 类型变量的指针，头指针
+ * @param head 指向 LinkNode 类型变量的指针，头指针
  * @param x datatype 类型变量
- * @return 指向 TreeNode 类型变量的指针
+ * @return 指向 LinkNode 类型变量的指针
  */
-TreeNode *delete(TreeNode *head, datatype x) {
+LinkNode *delete(LinkNode *head, datatype x) {
     /**
      * pre:q的前驱结点
      * q:要删除的结点
      */
-    TreeNode *pre = head, *q;
+    LinkNode *pre = head, *q;
     if (!head->next) {
         printf("带头结点的单链表是空的！");
         return head;

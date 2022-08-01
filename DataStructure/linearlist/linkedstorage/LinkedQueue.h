@@ -11,12 +11,12 @@
 typedef int datatype;
 typedef struct linkNode {
     datatype info;
-    struct linkNode *next;
-} TreeNode;
+    struct LinkNode *next;
+} LinkNode;
 
 typedef struct {
     //定义队首和队尾指针
-    TreeNode *front, *rear;
+    LinkNode *front, *rear;
 } queue;
 
 /**
@@ -45,7 +45,7 @@ int empty(queue queue) {
  * @param queue 指向 queue 类型的指针变量 queue
  */
 void display(queue *queue) {//去 * 试一下
-    TreeNode *p;
+    LinkNode *p;
     printf("\n");
     p = queue->front;
     if (!p) {
@@ -77,8 +77,8 @@ datatype read(queue queue) {
  * @return 指向 queue 类型变量的指针
  */
 queue *insert(queue *queue, datatype x) {
-    TreeNode *p;
-    p = (TreeNode *) malloc(sizeof(TreeNode));
+    LinkNode *p;
+    p = (LinkNode *) malloc(sizeof(LinkNode));
     p->info = x;
     //注意！！！！！！！！！
     p->next = NULL;
@@ -99,7 +99,7 @@ queue *insert(queue *queue, datatype x) {
  * @return 指向 queue 类型变量的指针
  */
 queue *delete(queue *queue) {
-    TreeNode *q;
+    LinkNode *q;
     q = queue->front;
     if (!queue->front) {
         printf("\n队列为空，无法删除！\n");

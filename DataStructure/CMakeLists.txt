@@ -80,3 +80,9 @@ add_executable(ShortestPathForAllVertexPairs graph/test/ShortestPathForAllVertex
 add_executable(TopologicalSort graph/test/TopologicalSort.c graph/topologicalsort/TopologicalSort.h)
 #图——关键路径
 add_executable(CriticalPath graph/test/CriticalPath.c graph/criticalpath/CriticalPath.h)
+
+#9
+#检索——线性表的检索——检索顺序表
+add_executable(RetrieveSequentialList retrieve/test/RetrieveSequentialList.c retrieve/sequentialsearch/sequentiallist/RetrieveSequentialList.h)
+#检索——线性表的检索——检索链式表
+add_executable(RetrieveLinkedList retrieve/test/RetrieveLinkedList.c retrieve/sequentialsearch/linkedlist/RetrieveLinkedList.h)

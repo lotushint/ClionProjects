@@ -11,32 +11,32 @@
 typedef int datatype;
 typedef struct linkNode {
     datatype info;
-    struct linkNode *next;
-} TreeNode;
+    struct LinkNode *next;
+} LinkNode;
 
 /**
  * 建立一个空的链式栈
- * @return 指向 TreeNode 类型变量的指针
+ * @return 指向 LinkNode 类型变量的指针
  */
-TreeNode *init() {
+LinkNode *init() {
     return NULL;
 }
 
 /**
  * 判断链式栈是否为空
- * @param top 指向 TreeNode 类型变量的指针 top
+ * @param top 指向 LinkNode 类型变量的指针 top
  * @return int 类型的变量
  */
-int empty(TreeNode *top) {
+int empty(LinkNode *top) {
     return top ? 0 : 1;
 }
 
 /**
  * 读链式栈的栈顶结点值
- * @param top 指向 TreeNode 类型变量的指针 top
+ * @param top 指向 LinkNode 类型变量的指针 top
  * @return datatype 类型的变量
  */
-datatype read(TreeNode *top) {
+datatype read(LinkNode *top) {
     if (!top) {
         printf("\n链式栈是空的！");
         exit(1);
@@ -46,9 +46,9 @@ datatype read(TreeNode *top) {
 
 /**
  * 输出链式栈中各个结点的值
- * @param top 指向 TreeNode 类型变量的指针 top
+ * @param top 指向 LinkNode 类型变量的指针 top
  */
-void display(TreeNode *top) {
+void display(LinkNode *top) {
     printf("\n");
     if (!top) {
         printf("\n链式栈是空的！");
@@ -62,12 +62,12 @@ void display(TreeNode *top) {
 
 /**
  * 向链式栈插入值为 x 结点（进栈）
- * @param top 指向 TreeNode 类型变量的指针 top
+ * @param top 指向 LinkNode 类型变量的指针 top
  * @param x datatype 类型的变量
- * @return 指向 TreeNode 类型变量的指针
+ * @return 指向 LinkNode 类型变量的指针
  */
-TreeNode *push(TreeNode *top, datatype x) {
-    TreeNode *p = (TreeNode *) malloc(sizeof(TreeNode));
+LinkNode *push(LinkNode *top, datatype x) {
+    LinkNode *p = (LinkNode *) malloc(sizeof(LinkNode));
     p->info = x;
     p->next = top;
     top = p;
@@ -76,11 +76,11 @@ TreeNode *push(TreeNode *top, datatype x) {
 
 /**
  * 删除链式栈的栈顶结点（出栈）
- * @param top 指向 TreeNode 类型变量的指针 top
- * @return 指向 TreeNode 类型变量的指针
+ * @param top 指向 LinkNode 类型变量的指针 top
+ * @return 指向 LinkNode 类型变量的指针
  */
-TreeNode *pop(TreeNode *top) {
-    TreeNode *q;
+LinkNode *pop(LinkNode *top) {
+    LinkNode *q;
     if (!top) {
         printf("\n链式栈是空的！");
         return NULL;

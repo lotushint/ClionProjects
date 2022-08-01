@@ -31,5 +31,7 @@ D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-buil
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/ShortestPathForAllVertexPairs.dir
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/TopologicalSort.dir
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/CriticalPath.dir
+D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/RetrieveSequentialList.dir
+D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/RetrieveLinkedList.dir
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/rebuild_cache.dir

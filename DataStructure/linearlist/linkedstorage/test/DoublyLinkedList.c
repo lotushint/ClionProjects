@@ -4,7 +4,7 @@
 #include "../DoublyLinkedList.h"
 
 int main() {
-    doubleNode *head;
+    DoubleNode *head;
     head = init();
     display(head);
     //7,1,21,31,9,3,2,0

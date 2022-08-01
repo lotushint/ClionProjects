@@ -4,7 +4,7 @@
 #include "../CircularSinglyLinkedList.h"
 
 int main() {
-    TreeNode *head;
+    LinkNode *head;
     head = circularInit();
     //7,1,21,31,9,3,2,0,
     head = circularInsert(head, 0, 0);

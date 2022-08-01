@@ -13,22 +13,22 @@ typedef int datatype;
 typedef struct doubleLinkNode {
     datatype info;
     struct doubleLinkNode *leftLink, *rightLink;
-} doubleNode;
+} DoubleNode;
 
 /**
  * 建立一个空的单链表
- * @return 指向 doubleNode 类型变量的指针
+ * @return 指向 DoubleNode 类型变量的指针
  */
-doubleNode *init() {
+DoubleNode *init() {
     return NULL;
 }
 
 /**
  * 输出单链表中各个结点的值
- * @param head 指向 doubleNode 类型变量的指针 head
+ * @param head 指向 DoubleNode 类型变量的指针 head
  */
-void display(doubleNode *head) {
-    doubleNode *p;
+void display(DoubleNode *head) {
+    DoubleNode *p;
     printf("\n");
     p = head;
     if (!p) {
@@ -44,12 +44,12 @@ void display(doubleNode *head) {
 
 /**
  * 在双链表中查找第 i 个结点的存储地址
- * @param head 指向 doubleNode 类型变量的指针 head
+ * @param head 指向 DoubleNode 类型变量的指针 head
  * @param i int 类型的变量 i
- * @return 指向 doubleNode 类型变量的指针
+ * @return 指向 DoubleNode 类型变量的指针
  */
-doubleNode *find(doubleNode *head, int i) {
-    doubleNode *p;
+DoubleNode *find(DoubleNode *head, int i) {
+    DoubleNode *p;
     p = head;
     if (i < 1) {
         printf("\n第%d个结点不存在！\n", i);
@@ -69,14 +69,14 @@ doubleNode *find(doubleNode *head, int i) {
 
 /**
  * 双链表第 i 个结点后插入值为 x 的新结点
- * @param head 指向 doubleNode 类型变量的指针 head
+ * @param head 指向 DoubleNode 类型变量的指针 head
  * @param x datatype 类型的变量 x
  * @param i int 类型的变量 i
- * @return 指向 doubleNode 类型变量的指针
+ * @return 指向 DoubleNode 类型变量的指针
  */
-doubleNode *insert(doubleNode *head, datatype x, int i) {
-    doubleNode *p, *q;
-    p = (doubleNode *) malloc(sizeof(doubleNode));
+DoubleNode *insert(DoubleNode *head, datatype x, int i) {
+    DoubleNode *p, *q;
+    p = (DoubleNode *) malloc(sizeof(DoubleNode));
     p->info = x;
 
     if (i == 0) {
@@ -126,15 +126,15 @@ doubleNode *insert(doubleNode *head, datatype x, int i) {
 
 /**
  * 在双链表中删除一个值为 x 的结点
- * @param head 指向 doubleNode 类型变量的指针 head
+ * @param head 指向 DoubleNode 类型变量的指针 head
  * @param x datatype 类型的变量 x
- * @return 指向 doubleNode 类型变量的指针
+ * @return 指向 DoubleNode 类型变量的指针
  */
-doubleNode *delete(doubleNode *head, datatype x) {
+DoubleNode *delete(DoubleNode *head, datatype x) {
     /**
      * 待指向值为 x 的结点的指针（被删除的结点）
      */
-    doubleNode *q;
+    DoubleNode *q;
     if (!head) {
         printf("双链表为空，无法进行删除操作！");
         return head;
