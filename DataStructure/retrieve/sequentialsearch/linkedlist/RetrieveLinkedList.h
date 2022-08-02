@@ -1,19 +1,12 @@
 //
 // Created by lotushint on 2022/8/1.
-// 线性表的检索——链式表（带头结点）
+// 线性表的检索（链式存储（带头结点））
 //
 
 #ifndef DATASTRUCTURE_RETRIEVELINKEDLIST_H
 #define DATASTRUCTURE_RETRIEVELINKEDLIST_H
 
-#include "stdio.h"
-
-typedef int dataType;
-typedef struct node {
-    dataType data;
-    struct node *next;
-} LinkNode;
-typedef LinkNode *LinkList;
+#include "LinkedList.h"
 
 /**
  * 带头结点的单链表的顺序查找算法

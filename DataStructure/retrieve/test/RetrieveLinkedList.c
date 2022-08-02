@@ -1,6 +1,6 @@
 //
 // Created by lotushint on 2022/8/1.
-// 线性表的检索——链式表（带头结点）
+// 线性表的检索（链式存储（带头结点））
 //
 
 #include <malloc.h>

@@ -1,6 +1,6 @@
 //
 // Created by lotushint on 2022/7/31.
-// 线性表的检索——顺序表
+// 线性表的检索（顺序存储）
 //
 
 #include "../sequentialsearch/sequentiallist/RetrieveSequentialList.h"

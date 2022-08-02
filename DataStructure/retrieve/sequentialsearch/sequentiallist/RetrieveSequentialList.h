@@ -1,26 +1,12 @@
 //
 // Created by lotushint on 2022/7/31.
-// 线性表的检索——顺序表
+// 线性表的检索（顺序存储）
 //
 
 #ifndef DATASTRUCTURE_RETRIEVESEQUENTIALLIST_H
 #define DATASTRUCTURE_RETRIEVESEQUENTIALLIST_H
 
-#include "stdio.h"
-
-#define MAXSIZE 1000 //预定义最大数据域空间
-
-typedef int dataType;
-/**
- * 线性表类型
- */
-typedef struct {
-    dataType data[MAXSIZE];
-    /**
-     * 线性表长度
-     */
-    int length;
-} SequenceList;
+#include "SequentialList.h"
 
 /**
  * 顺序查找非递归算法

@@ -82,7 +82,11 @@ add_executable(TopologicalSort graph/test/TopologicalSort.c graph/topologicalsor
 add_executable(CriticalPath graph/test/CriticalPath.c graph/criticalpath/CriticalPath.h)
 
 #9
-#检索——线性表的检索——检索顺序表
-add_executable(RetrieveSequentialList retrieve/test/RetrieveSequentialList.c retrieve/sequentialsearch/sequentiallist/RetrieveSequentialList.h)
-#检索——线性表的检索——检索链式表
-add_executable(RetrieveLinkedList retrieve/test/RetrieveLinkedList.c retrieve/sequentialsearch/linkedlist/RetrieveLinkedList.h)
+#检索——顺序检索——线性表的检索（顺序存储）
+add_executable(RetrieveSequentialList retrieve/test/RetrieveSequentialList.c retrieve/sequentialsearch/sequentiallist/RetrieveSequentialList.h retrieve/sequentialsearch/sequentiallist/SequentialList.h)
+#检索——顺序检索——线性表的检索（链式存储）
+add_executable(RetrieveLinkedList retrieve/test/RetrieveLinkedList.c retrieve/sequentialsearch/linkedlist/RetrieveLinkedList.h retrieve/sequentialsearch/linkedlist/LinkedList.h)
+#检索——二分法检索
+add_executable(BinarySearch retrieve/test/BinarySearch.c retrieve/binarysearch/BinarySearch.h)
+#检索——分块检索（索引顺序查找）
+add_executable(IndexOrderSearch retrieve/test/IndexOrderSearch.c retrieve/indexordersearch/IndexOrderSearch.h)
