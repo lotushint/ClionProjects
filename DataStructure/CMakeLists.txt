@@ -90,3 +90,5 @@ add_executable(RetrieveLinkedList retrieve/test/RetrieveLinkedList.c retrieve/se
 add_executable(BinarySearch retrieve/test/BinarySearch.c retrieve/binarysearch/BinarySearch.h)
 #检索——分块检索（索引顺序查找）
 add_executable(IndexOrderSearch retrieve/test/IndexOrderSearch.c retrieve/indexordersearch/IndexOrderSearch.h)
+#检索——二叉排序树
+add_executable(BinarySortedTree retrieve/test/BinarySortedTree.c retrieve/binarysortedtree/BinarySortedTree.h)
