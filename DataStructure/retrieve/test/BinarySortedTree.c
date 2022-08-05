@@ -28,5 +28,7 @@ int main() {
     p = binarySortedSearch2(tree, 25);
     printf("\n递归算法：\n待查找关键字 25 所在结点的值为 %d\n", p->data);
 
+    printf("\n删除结点:\n");
+    deleteBinaryTreeNode(tree, 20);
     return 0;
 }

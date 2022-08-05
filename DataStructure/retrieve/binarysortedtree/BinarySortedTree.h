@@ -123,5 +123,101 @@ BinarySortedTree creatBinarySortedTree() {
     return tree;
 }
 
+/**
+ * 在二叉排序树中删除结点值为 x 的结点
+ * @param tree 二叉排序树
+ * @param x 待删除结点值
+ * @return 删除结点后的二叉树地址
+ */
+BinarySortedTree deleteBinaryTreeNode(BinarySortedTree tree, dataType x) {
+    /**
+     * parentPosition:被删除结点的父结点<br>
+     * position:被删除结点<br>
+     * child:情况 4 中用来找到被删除结点的中序首点<br>
+     */
+    BinarySortedTreeNode *parentPosition, *position, *child;
+    //查找待删除结点
+    binarySortedSearch1(tree, x, &parentPosition, &position);
+    //找到了待删除结点
+    if (position) {
+        /*
+         * 情况 1：被删除结点为叶结点
+         */
+        if (position->leftChild == NULL && position->rightChild == NULL) {
+            //待删除结点有双亲
+            if (parentPosition) {
+                if (position == parentPosition->leftChild) {
+                    parentPosition->leftChild = NULL;
+                } else {
+                    parentPosition->rightChild = NULL;
+                }
+            } else {
+                //被删除结点为树根
+                tree = NULL;
+            }
+            free(position);
+        } else if (position->rightChild == NULL) {
+            /*
+             * 情况 2：被删除结点的右子树为空，
+             * 用被删除结点的左子树代替该结点
+             */
+            //被删除结点的双亲结点不为空
+            if (parentPosition) {
+                if (parentPosition->leftChild == position) {
+                    //被删除结点是其双亲结点的左儿子
+                    parentPosition->leftChild = position->leftChild;
+                } else {
+                    //被删除结点是其双亲结点的右儿子
+                    parentPosition->rightChild = position->leftChild;
+                }
+            } else {
+                tree = position->leftChild;
+            }
+            free(position);
+        } else if (position->leftChild == NULL) {
+            /*
+             * 情况 3：被删除结点的左子树为空，
+             * 用被删除结点的右子树代替该结点
+             */
+            //被删除结点的双亲结点不为空
+            if (parentPosition) {
+                if (parentPosition->leftChild == position) {
+                    parentPosition->leftChild = position->rightChild;
+                } else {
+                    parentPosition->rightChild = position->rightChild;
+                }
+            } else {
+                tree = position->rightChild;
+            }
+            free(position);
+        } else {
+            /*
+             * 情况 4：被删除结点的左右子树均不为空，
+             * 用右子树代替被删结点，同时将被删结点的左子树收为右子树中序首点的儿子
+             */
+            child = position->rightChild;
+            //找到被删结点的右子树的中序首点
+            while (child->leftChild) {
+                child = child->leftChild;
+            }
+
+            //被删除结点的左子树收为 child 的左孩子
+            child->leftChild = position->leftChild;
+            //被删结点不是树根
+            if (position) {
+                if (parentPosition->leftChild == position) {
+                    parentPosition->leftChild = position->rightChild;
+                } else {
+                    parentPosition->rightChild = position->rightChild;
+                }
+            } else {
+                //被删除结点为树根
+                tree = position->rightChild;
+            }
+            free(position);
+        }
+    }
+    return tree;
+}
 
 #endif //DATASTRUCTURE_BINARYSORTEDTREE_H
