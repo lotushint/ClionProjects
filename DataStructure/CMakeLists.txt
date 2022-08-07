@@ -82,13 +82,17 @@ add_executable(TopologicalSort graph/test/TopologicalSort.c graph/topologicalsor
 add_executable(CriticalPath graph/test/CriticalPath.c graph/criticalpath/CriticalPath.h)
 
 #9
-#检索——顺序检索——线性表的检索（顺序存储）
+#检索——线性表的检索——顺序检索（顺序存储）
 add_executable(RetrieveSequentialList retrieve/test/RetrieveSequentialList.c retrieve/sequentialsearch/sequentiallist/RetrieveSequentialList.h retrieve/sequentialsearch/sequentiallist/SequentialList.h)
-#检索——顺序检索——线性表的检索（链式存储）
+#检索——线性表的检索——顺序检索（链式存储）
 add_executable(RetrieveLinkedList retrieve/test/RetrieveLinkedList.c retrieve/sequentialsearch/linkedlist/RetrieveLinkedList.h retrieve/sequentialsearch/linkedlist/LinkedList.h)
-#检索——二分法检索
+#检索——线性表的检索——二分法检索
 add_executable(BinarySearch retrieve/test/BinarySearch.c retrieve/binarysearch/BinarySearch.h)
-#检索——分块检索（索引顺序查找）
+#检索——线性表的检索——分块检索（索引顺序查找）
 add_executable(IndexOrderSearch retrieve/test/IndexOrderSearch.c retrieve/indexordersearch/IndexOrderSearch.h)
 #检索——二叉排序树
 add_executable(BinarySortedTree retrieve/test/BinarySortedTree.c retrieve/binarysortedtree/BinarySortedTree.h)
+#检索——丰满树和平衡树——丰满树
+add_executable(PlumpTree retrieve/plumptree/PlumpTree.c retrieve/plumptree/PlumpTree.h)
+#检索——丰满树和平衡树——平衡二叉排序树
+add_executable(BalancedBinarySortTree retrieve/balancedbinarysorttree/BalancedBinarySortTree.c retrieve/balancedbinarysorttree/BalancedBinarySortTree.h)
