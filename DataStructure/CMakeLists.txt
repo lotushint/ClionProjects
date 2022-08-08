@@ -94,5 +94,5 @@ add_executable(IndexOrderSearch retrieve/test/IndexOrderSearch.c retrieve/indexo
 add_executable(BinarySortedTree retrieve/test/BinarySortedTree.c retrieve/binarysortedtree/BinarySortedTree.h)
 #检索——丰满树和平衡树——丰满树
 add_executable(PlumpTree retrieve/plumptree/PlumpTree.c retrieve/plumptree/PlumpTree.h)
-#检索——丰满树和平衡树——平衡二叉排序树
+#检索——丰满树和平衡树——平衡二叉排序树（AVL树）
 add_executable(BalancedBinarySortTree retrieve/balancedbinarysorttree/BalancedBinarySortTree.c retrieve/balancedbinarysorttree/BalancedBinarySortTree.h)
