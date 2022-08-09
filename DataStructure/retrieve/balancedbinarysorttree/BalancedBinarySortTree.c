@@ -6,6 +6,13 @@
 #include "BalancedBinarySortTree.h"
 
 int main() {
-
+    BalancedBinaryTree tree;
+    int h;
+    insertAvlTree(&tree, 120, &h);
+    insertAvlTree(&tree, 80, &h);
+    insertAvlTree(&tree, 30, &h);
+    insertAvlTree(&tree, 90, &h);
+    insertAvlTree(&tree, 45, &h);
+    insertAvlTree(&tree, 60, &h);
     return 0;
 }
