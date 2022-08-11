@@ -3,7 +3,7 @@
 // 直接插入排序
 //
 
-#include "../directinsertionsort/DirectInsertionSort.h"
+#include "../straightinsertionsort//StraightInsertionSort.h"
 
 int main() {
     Table table;

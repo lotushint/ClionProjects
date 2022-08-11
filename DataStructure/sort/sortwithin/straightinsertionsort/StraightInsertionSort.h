@@ -6,7 +6,7 @@
 #ifndef DATASTRUCTURE_STRAIGHTINSERTIONSORT_H
 #define DATASTRUCTURE_STRAIGHTINSERTIONSORT_H
 
-#include "../table.h"
+#include "../../table/Table.h"
 
 /**
  * 直接插入排序算法

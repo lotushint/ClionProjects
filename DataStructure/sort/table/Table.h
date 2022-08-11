@@ -1,5 +1,6 @@
 //
 // Created by lotushint on 2022/8/11.
+// 常见排序算法的头文件
 //
 
 #ifndef DATASTRUCTURE_TABLE_H
@@ -24,7 +25,7 @@ typedef struct {
     /**
      * 排序码，为了和平时的习惯一致，recordType[0]一般不用于存放排序码，在一些排序算法中它可以用来存放临时数据
      */
-    RecordType recordType[MAXSIZE];
+    RecordType recordType[MAXSIZE + 1];
     /**
      * 待排序文件中记录的个数
      */
