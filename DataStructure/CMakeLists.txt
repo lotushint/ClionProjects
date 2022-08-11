@@ -96,3 +96,11 @@ add_executable(BinarySortedTree retrieve/test/BinarySortedTree.c retrieve/binary
 add_executable(PlumpTree retrieve/plumptree/PlumpTree.c retrieve/plumptree/PlumpTree.h)
 #检索——丰满树和平衡树——平衡二叉排序树（AVL树）
 add_executable(BalancedBinarySortTree retrieve/balancedbinarysorttree/BalancedBinarySortTree.c retrieve/balancedbinarysorttree/BalancedBinarySortTree.h)
+#检索——最佳二叉排序树和 Huffman 树
+add_executable(BestBinarySortTree retrieve/bestbinarysorttree/BestBinarySortTree.c retrieve/bestbinarysorttree/BestBinarySortTree.h)
+
+#10
+#内排序——插入排序——直接插入排序
+add_executable(StraightInsertionSort sort/sortwithin/test/StraightInsertionSort.c sort/sortwithin/straightinsertionsort/StraightInsertionSort.h)
+#内排序——插入排序——二分法插入排序
+add_executable(BinaryInsertionSort sort/sortwithin/test/BinaryInsertionSort.c sort/sortwithin/binaryinsertionsort/BinaryInsertionSort.h)

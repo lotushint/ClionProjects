@@ -38,5 +38,8 @@ D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-buil
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/BinarySortedTree.dir
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/PlumpTree.dir
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/BalancedBinarySortTree.dir
+D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/BestBinarySortTree.dir
+D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/StraightInsertionSort.dir
+D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/BinaryInsertionSort.dir
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/rebuild_cache.dir
