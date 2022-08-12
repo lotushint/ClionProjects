@@ -106,3 +106,5 @@ add_executable(StraightInsertionSort sort/sortwithin/test/StraightInsertionSort.
 add_executable(BinaryInsertionSort sort/sortwithin/test/BinaryInsertionSort.c sort/sortwithin/binaryinsertionsort/BinaryInsertionSort.h)
 #内排序——插入排序——表插入排序
 add_executable(TableInsertionSort sort/table/Table2.h sort/sortwithin/test/TableInsertionSort.c sort/sortwithin/tableinsertionsort/TableInsertionSort.h)
+#内排序——插入排序——shell插入排序
+add_executable(ShellInsertionSort sort/sortwithin/shellinsertionsort/ShellInsertionSort.c sort/sortwithin/shellinsertionsort/ShellInsertionSort.h)
