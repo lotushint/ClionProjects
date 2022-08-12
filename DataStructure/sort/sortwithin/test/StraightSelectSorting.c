@@ -1,9 +1,9 @@
 //
 // Created by lotushint on 2022/8/12.
-// shell插入排序
+// 直接选择排序
 //
 
-#include "ShellInsertionSort.h"
+#include "../selectionsort/straightselectsorting/StraightSelectSorting.h"
 
 int main() {
     Table table;
@@ -14,8 +14,7 @@ int main() {
     table.recordType[5].key = 28;
     table.recordType[6].key = 165;
     table.recordType[7].key = 123;
-//    table.recordType[8].key = 123;
-    table.length = 8;
-    shellInsertionSort(&table);
+    table.length = 7;
+    straightSelectSorting(&table);
     return 0;
 }

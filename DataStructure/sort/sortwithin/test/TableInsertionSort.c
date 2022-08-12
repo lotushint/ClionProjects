@@ -3,7 +3,7 @@
 // 表插入排序
 //
 
-#include "../tableinsertionsort/TableInsertionSort.h"
+#include "../insertionsort/tableinsertionsort/TableInsertionSort.h"
 
 int main() {
     Table2 table;

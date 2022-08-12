@@ -23,13 +23,14 @@ void shellInsertionSort(Table *table) {
 
             //向前找插入位置
             j = i - gap;
-            //排序码比较找插入位置并后移
+            //排序码比较找插入位置并后移，j>0是为了保证比较时不会超过第一个记录而发生错误
             while (j > 0 && table->recordType[0].key < table->recordType[j].key) {
                 //记录后移（在分组中后移）
                 table->recordType[j + gap] = table->recordType[j];
                 //继续向前查找
                 j = j - gap;
             }
+
             //插入第 i 个元素的副本
             table->recordType[j + gap] = table->recordType[0];
         }

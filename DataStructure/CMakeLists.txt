@@ -101,10 +101,12 @@ add_executable(BestBinarySortTree retrieve/bestbinarysorttree/BestBinarySortTree
 
 #10
 #内排序——插入排序——直接插入排序
-add_executable(StraightInsertionSort sort/sortwithin/test/StraightInsertionSort.c sort/sortwithin/straightinsertionsort/StraightInsertionSort.h)
+add_executable(StraightInsertionSort sort/sortwithin/test/StraightInsertionSort.c sort/sortwithin/insertionsort/straightinsertionsort/StraightInsertionSort.h)
 #内排序——插入排序——二分法插入排序
-add_executable(BinaryInsertionSort sort/sortwithin/test/BinaryInsertionSort.c sort/sortwithin/binaryinsertionsort/BinaryInsertionSort.h)
+add_executable(BinaryInsertionSort sort/sortwithin/test/BinaryInsertionSort.c sort/sortwithin/insertionsort/binaryinsertionsort/BinaryInsertionSort.h)
 #内排序——插入排序——表插入排序
-add_executable(TableInsertionSort sort/table/Table2.h sort/sortwithin/test/TableInsertionSort.c sort/sortwithin/tableinsertionsort/TableInsertionSort.h)
+add_executable(TableInsertionSort sort/sortwithin/table/Table2.h sort/sortwithin/test/TableInsertionSort.c sort/sortwithin/insertionsort/tableinsertionsort/TableInsertionSort.h)
 #内排序——插入排序——shell插入排序
-add_executable(ShellInsertionSort sort/sortwithin/shellinsertionsort/ShellInsertionSort.c sort/sortwithin/shellinsertionsort/ShellInsertionSort.h)
+add_executable(ShellInsertionSort sort/sortwithin/test/ShellInsertionSort.c sort/sortwithin/insertionsort/shellinsertionsort/ShellInsertionSort.h)
+#内排序——选择排序——直接选择排序
+add_executable(StraightSelectSorting sort/sortwithin/test/StraightSelectSorting.c sort/sortwithin/selectionsort/straightselectsorting/StraightSelectSorting.h)

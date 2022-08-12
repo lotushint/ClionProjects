@@ -1,9 +1,9 @@
 //
-// Created by lotushint on 2022/8/11.
-// 二分法插入排序
+// Created by lotushint on 2022/8/12.
+// shell插入排序
 //
 
-#include "../insertionsort/binaryinsertionsort/BinaryInsertionSort.h"
+#include "../insertionsort/shellinsertionsort/ShellInsertionSort.h"
 
 int main() {
     Table table;
@@ -14,8 +14,8 @@ int main() {
     table.recordType[5].key = 28;
     table.recordType[6].key = 165;
     table.recordType[7].key = 123;
-    table.recordType[8].key = 123;
-    table.length = 8;
-    binaryInsertionSort(&table);
+//    table.recordType[8].key = 123;
+    table.length = 7;
+    shellInsertionSort(&table);
     return 0;
 }
