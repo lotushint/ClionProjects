@@ -36,6 +36,7 @@ void bubbleSort2(Table *table) {
     int i, j, done;
     i = 1;
     done = 1;
+    //done 在序列已经排好序时直接结束排序
     while (i < table->length && done) {
         done = 0;
         for (j = 1; j <= table->length - i; ++j) {

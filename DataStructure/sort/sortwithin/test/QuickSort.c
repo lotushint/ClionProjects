@@ -1,9 +1,9 @@
 //
 // Created by lotushint on 2022/8/13.
-// 冒泡排序
+// 快速排序
 //
 
-#include "../swapsort/bubblesort/BubbleSort.h"
+#include "../swapsort/quicksort/QuickSort.h"
 
 int main() {
     Table table;
@@ -17,16 +17,7 @@ int main() {
     table.recordType[8].key = 8;
     table.recordType[9].key = 12;
     table.length = 9;
-    bubbleSort(&table);
-
-    /*
-     * 改进，测试 done
-     */
-//    table.recordType[1].key = 1;
-//    table.recordType[2].key = 2;
-//    table.recordType[3].key = 3;
-//    table.recordType[4].key = 4;
-//    table.length = 4;
-//    bubbleSort2(&table);
+    quickSort(&table, 1, 9);
+//    quickSort2(&table, 1, 9);
     return 0;
 }
