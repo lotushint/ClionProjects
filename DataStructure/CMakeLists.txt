@@ -110,3 +110,7 @@ add_executable(TableInsertionSort sort/sortwithin/table/Table2.h sort/sortwithin
 add_executable(ShellInsertionSort sort/sortwithin/test/ShellInsertionSort.c sort/sortwithin/insertionsort/shellinsertionsort/ShellInsertionSort.h)
 #内排序——选择排序——直接选择排序
 add_executable(StraightSelectSorting sort/sortwithin/test/StraightSelectSorting.c sort/sortwithin/selectionsort/straightselectsorting/StraightSelectSorting.h)
+#内排序——选择排序——树型选择排序
+add_executable(TreeSelectionSort sort/sortwithin/test/TreeSelectionSort.c sort/sortwithin/selectionsort/treeselectionsort/TreeSelectionSort.h)
+#内排序——选择排序——堆排序
+add_executable(HeapSort sort/sortwithin/selectionsort/heapsort/HeapSort.c sort/sortwithin/selectionsort/heapsort/HeapSort.h)
