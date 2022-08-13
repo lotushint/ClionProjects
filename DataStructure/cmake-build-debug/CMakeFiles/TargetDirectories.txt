@@ -46,5 +46,6 @@ D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-buil
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/StraightSelectSorting.dir
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/TreeSelectionSort.dir
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/HeapSort.dir
+D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/BubbleSort.dir
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/lotushint/MyProjects/JetbrainsProjects/ClionProjects/DataStructure/cmake-build-debug/CMakeFiles/rebuild_cache.dir

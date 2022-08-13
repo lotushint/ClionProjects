@@ -113,4 +113,7 @@ add_executable(StraightSelectSorting sort/sortwithin/test/StraightSelectSorting.
 #内排序——选择排序——树型选择排序
 add_executable(TreeSelectionSort sort/sortwithin/test/TreeSelectionSort.c sort/sortwithin/selectionsort/treeselectionsort/TreeSelectionSort.h)
 #内排序——选择排序——堆排序
-add_executable(HeapSort sort/sortwithin/selectionsort/heapsort/HeapSort.c sort/sortwithin/selectionsort/heapsort/HeapSort.h)
+add_executable(HeapSort sort/sortwithin/test/HeapSort.c sort/sortwithin/selectionsort/heapsort/HeapSort.h)
+#内排序——交换排序——冒泡排序
+add_executable(BubbleSort sort/sortwithin/test/BubbleSort.c sort/sortwithin/swapsort/bubblesort/BubbleSort.h)
+#内排序——交换排序——快速排序

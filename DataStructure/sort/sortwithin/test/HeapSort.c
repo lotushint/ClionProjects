@@ -3,7 +3,7 @@
 // 堆排序
 //
 
-#include "HeapSort.h"
+#include "../selectionsort/heapsort/HeapSort.h"
 
 int main() {
     Table table;
