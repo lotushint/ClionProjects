@@ -118,3 +118,5 @@ add_executable(HeapSort sort/sortwithin/test/HeapSort.c sort/sortwithin/selectio
 add_executable(BubbleSort sort/sortwithin/test/BubbleSort.c sort/sortwithin/swapsort/bubblesort/BubbleSort.h)
 #内排序——交换排序——快速排序
 add_executable(QuickSort sort/sortwithin/test/QuickSort.c sort/sortwithin/swapsort/quicksort/QuickSort.h)
+#内排序——归并排序
+add_executable(MergeSort sort/sortwithin/test/MergeSort.c sort/sortwithin/mergesort/MergeSort.h)
