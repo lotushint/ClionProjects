@@ -3,43 +3,14 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
-        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[13]罗马数字转整数.c">
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[5]最长回文子串.c">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[13]罗马数字转整数.md" />
-              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[13]罗马数字转整数.c" />
-            </LeetcodeEditor>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[14]最长公共前缀.c">
-          <value>
-            <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[14]最长公共前缀.md" />
-              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[14]最长公共前缀.c" />
-            </LeetcodeEditor>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[5]最长回文子串.c">
-          <value>
-            <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[5]最长回文子串.md" />
-              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[5]最长回文子串.c" />
-            </LeetcodeEditor>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[7]整数反转.c">
-          <value>
-            <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[7]整数反转.md" />
-              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[7]整数反转.c" />
-            </LeetcodeEditor>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[9]回文数.c">
-          <value>
-            <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[9]回文数.md" />
-              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[9]回文数.c" />
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[5]最长回文子串.md" />
+              <option name="frontendQuestionId" value="leetcode.cn5" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[5]最长回文子串.c" />
+              <option name="titleSlug" value="longest-palindromic-substring" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -47,8 +18,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/leetcode/editor/cn/doc/content/[1008]前序遍历构造二叉搜索树.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com1008" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn1008" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/leetcode/editor/cn/[1008]前序遍历构造二叉搜索树.c" />
               <option name="titleSlug" value="construct-binary-search-tree-from-preorder-traversal" />
             </LeetcodeEditor>
@@ -58,8 +29,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/leetcode/editor/cn/doc/content/[19]删除链表的倒数第 N 个结点.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com19" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn19" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/leetcode/editor/cn/[19]删除链表的倒数第 N 个结点.c" />
               <option name="titleSlug" value="remove-nth-node-from-end-of-list" />
             </LeetcodeEditor>
@@ -69,8 +40,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/leetcode/editor/cn/doc/content/[4]寻找两个正序数组的中位数.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com4" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn4" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/leetcode/editor/cn/[4]寻找两个正序数组的中位数.c" />
               <option name="titleSlug" value="median-of-two-sorted-arrays" />
             </LeetcodeEditor>
@@ -80,8 +51,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/leetcode/editor/cn/doc/content/[688]骑士在棋盘上的概率.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com688" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn688" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/leetcode/editor/cn/[688]骑士在棋盘上的概率.c" />
               <option name="titleSlug" value="knight-probability-in-chessboard" />
             </LeetcodeEditor>
